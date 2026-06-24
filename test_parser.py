@@ -8,7 +8,7 @@ from __future__ import annotations
 
 import pytest
 
-from slash_command import Command, Text, parse
+from _parser import Command, Text, parse
 
 
 # ---------------------------------------------------------------------------
