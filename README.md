@@ -228,6 +228,14 @@ implementation must produce no failures.
 
 ---
 
+## 10. Known implementations
+
+| Language | Package | Notes |
+|----------|---------|-------|
+| Python | [slash_command](https://github.com/monperrus/slash_command/) | Packaged reference implementation |
+
+---
+
 ## Appendix A. EBNF summary
 
 ```ebnf
