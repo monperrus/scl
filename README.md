@@ -193,9 +193,9 @@ SCL parsing is total: it always produces a valid `Document`.  Specific cases:
 
 ---
 
-## 7. Relationship to island parsing
+## 7. Relationship to [Island parsing](https://web-backend.simula.no/sites/default/files/publications/Simula.SE.509.pdf)
 
-Island parsing (Rekers & Schürr, 1996; Moonen, 2001) is a technique for
+[Island parsing](https://web-backend.simula.no/sites/default/files/publications/Simula.SE.509.pdf) (Moonen, 2001) is a technique for
 recovering structure from partially-parseable input.  "Islands" of
 grammatically well-formed content are parsed; everything else is "water" that
 is passed through unchanged.
@@ -204,6 +204,11 @@ SCL instantiates this idea at a coarser level: slash-command syntax defines
 the island grammar; natural language (intended for an LLM) is the water.  The
 scanner never attempts to parse the water, which makes the approach robust to
 arbitrary natural-language content including code, markup, URLs, and punctuation.
+
+Related end-user AI language work such as [Universalis](https://queue.acm.org/detail.cfm?id=3746223) likewise explores
+interleaving human-readable natural-language structure with executable
+semantics, though with a broader goal of readable AI-generated programs rather
+than command islands embedded in free text.
 
 ---
 
